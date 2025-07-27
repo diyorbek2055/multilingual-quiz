@@ -1,0 +1,80 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+}
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #ffffff22;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+h1, p {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label {
+    display: block;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+label:hover {
+    background: rgba(255,255,255,0.2);
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+button, .button {
+    padding: 12px 20px;
+    background: #ff7e5f;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+button:hover, .button:hover {
+    background: #feb47b;
+}
+.lang-select {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+/* Add scoring style without JS */
+.score-result { display: none; font-size: 24px; color: #ffd700; font-weight: bold; text-align: center; }
+input[value="correct"]:checked ~ .score-1,
+input[value="correct-2"]:checked ~ .score-2,
+input[value="correct-3"]:checked ~ .score-3,
+input[value="correct-4"]:checked ~ .score-4,
+input[value="correct-5"]:checked ~ .score-5 {
+    display: block;
+}

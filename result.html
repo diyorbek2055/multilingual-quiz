@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Natija</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .score-count { display: none; font-size: 22px; font-weight: bold; margin-top: 20px; text-align: center; }
+        .correct-answer { margin: 10px 0; font-weight: bold; color: green; }
+        .show-result { display: block; }
+        h2 { margin-top: 30px; color: #ffd700; text-align: center; }
+
+        input[value="correct"]:checked ~ .score-1,
+        input[value="correct"]:checked ~ input[value="correct"]:checked ~ .score-2,
+        input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ .score-3,
+        input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ .score-4,
+        input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ .score-5,
+        input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ .score-6,
+        input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ .score-7,
+        input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ .score-8,
+        input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ .score-9,
+        input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ input[value="correct"]:checked ~ .score-10 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>✅ Yakuniy natija</h1>
+
+    <h2>ENGLISH</h2>
+    <div class="correct-answer">1. Correct answer: Joyful</div>
+    <div class="correct-answer">2. Correct answer: Banana</div>
+    <div class="correct-answer">3. Correct answer: goes</div>
+    <div class="correct-answer">4. Correct answer: Purple</div>
+    <div class="correct-answer">5. Correct answer: 6</div>
+    <div class="correct-answer">6. Correct answer: Dog</div>
+    <div class="correct-answer">7. Correct answer: 8</div>
+    <div class="correct-answer">8. Correct answer: Earth</div>
+    <div class="correct-answer">9. Correct answer: East</div>
+    <div class="correct-answer">10. Correct answer: February</div>
+
+    <h2>CHINESE</h2>
+    <div class="correct-answer">1. 正确答案: 你好</div>
+    <div class="correct-answer">2. 正确答案: 中国</div>
+    <div class="correct-answer">3. 正确答案: 竹子</div>
+    <div class="correct-answer">4. 正确答案: 5</div>
+    <div class="correct-answer">5. 正确答案: 东</div>
+    <div class="correct-answer">6. 正确答案: 紫色</div>
+    <div class="correct-answer">7. 正确答案: 亚洲</div>
+    <div class="correct-answer">8. 正确答案: 动物</div>
+    <div class="correct-answer">9. 正确答案: 12</div>
+    <div class="correct-answer">10. 正确答案: 空气</div>
+
+    <h2>GERMAN</h2>
+    <div class="correct-answer">1. Richtig: Berlin</div>
+    <div class="correct-answer">2. Richtig: flink</div>
+    <div class="correct-answer">3. Richtig: 7</div>
+    <div class="correct-answer">4. Richtig: Wasser</div>
+    <div class="correct-answer">5. Richtig: Lila</div>
+    <div class="correct-answer">6. Richtig: Hund</div>
+    <div class="correct-answer">7. Richtig: Katze</div>
+    <div class="correct-answer">8. Richtig: Apfel</div>
+    <div class="correct-answer">9. Richtig: Bleistift</div>
+    <div class="correct-answer">10. Richtig: Frühling</div>
+
+    <h2>KOREAN</h2>
+    <div class="correct-answer">1. 정답: 서울</div>
+    <div class="correct-answer">2. 정답: 야옹</div>
+    <div class="correct-answer">3. 정답: 12</div>
+    <div class="correct-answer">4. 정답: 과일</div>
+    <div class="correct-answer">5. 정답: 한복</div>
+    <div class="correct-answer">6. 정답: 보라</div>
+    <div class="correct-answer">7. 정답: 갈증나서</div>
+    <div class="correct-answer">8. 정답: 강아지</div>
+    <div class="correct-answer">9. 정답: 봄</div>
+    <div class="correct-answer">10. 정답: 한글</div>
+
+    <h2>RUSSIAN</h2>
+    <div class="correct-answer">1. Правильный ответ: огромный</div>
+    <div class="correct-answer">2. Правильный ответ: морковь</div>
+    <div class="correct-answer">3. Правильный ответ: 8</div>
+    <div class="correct-answer">4. Правильный ответ: четверг</div>
+    <div class="correct-answer">5. Правильный ответ: рыба</div>
+    <div class="correct-answer">6. Правильный ответ: в лесу</div>
+    <div class="correct-answer">7. Правильный ответ: зелёный</div>
+    <div class="correct-answer">8. Правильный ответ: кошка</div>
+    <div class="correct-answer">9. Правильный ответ: Москва</div>
+    <div class="correct-answer">10. Правильный ответ: воды</div>
+
+    
+<h2>ARABIC</h2>
+<div class="correct-answer">1. الإجابة الصحيحة: كتب</div>
+<div class="correct-answer">2. الإجابة الصحيحة: القاهرة</div>
+<div class="correct-answer">3. الإجابة الصحيحة: 5</div>
+<div class="correct-answer">4. الإجابة الصحيحة: أزرق</div>
+<div class="correct-answer">5. الإجابة الصحيحة: ماء</div>
+<div class="correct-answer">6. الإجابة الصحيحة: 7</div>
+<div class="correct-answer">7. الإجابة الصحيحة: محمد</div>
+<div class="correct-answer">8. الإجابة الصحيحة: السعودية</div>
+<div class="correct-answer">9. الإجابة الصحيحة: بقرة</div>
+<div class="correct-answer">10. الإجابة الصحيحة: خريف</div>
+
+<div class="score-count score-1">🎯 Siz to‘g‘ri topgan javoblaringiz: 1 ta</div>
+    <div class="score-count score-2">🎯 Siz to‘g‘ri topgan javoblaringiz: 2 ta</div>
+    <div class="score-count score-3">🎯 Siz to‘g‘ri topgan javoblaringiz: 3 ta</div>
+    <div class="score-count score-4">🎯 Siz to‘g‘ri topgan javoblaringiz: 4 ta</div>
+    <div class="score-count score-5">🎯 Siz to‘g‘ri topgan javoblaringiz: 5 ta</div>
+    <div class="score-count score-6">🎯 Siz to‘g‘ri topgan javoblaringiz: 6 ta</div>
+    <div class="score-count score-7">🎯 Siz to‘g‘ri topgan javoblaringiz: 7 ta</div>
+    <div class="score-count score-8">🎯 Siz to‘g‘ri topgan javoblaringiz: 8 ta</div>
+    <div class="score-count score-9">🎯 Siz to‘g‘ri topgan javoblaringiz: 9 ta</div>
+    <div class="score-count score-10">🎯 Siz to‘g‘ri topgan javoblaringiz: 10 ta</div>
+
+    <div style="text-align:center; margin-top: 30px;">
+        <a class="button" href="index.html">🔁 Boshidan boshlash</a>
+    </div>
+</div>
+</body>
+</html>
